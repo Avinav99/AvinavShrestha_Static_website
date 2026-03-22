@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avinav Shrestha's IT Skills - System Administration, Linux, Server Management, and Microsoft Office.">
+    <title>My Skills | Avinav Shrestha</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .skill-category {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .skill-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            transition: all var(--transition-speed);
+        }
+        
+        .skill-card:hover {
+            border-color: var(--color-blue);
+            box-shadow: 0 4px 12px rgba(10, 36, 99, 0.1);
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .skill-name {
+            font-weight: 600;
+            color: var(--color-blue);
+        }
+        
+        .skill-level {
+            font-size: 0.85rem;
+            color: var(--color-red);
+            font-weight: 700;
+            background-color: rgba(216, 49, 91, 0.1);
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background-color: var(--color-light-gray);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        
+        .progress {
+            height: 100%;
+            background-color: var(--color-blue);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <shared-navbar></shared-navbar>
+
+    <main>
+        <!-- Page Header -->
+        <section class="section bg-light" style="padding-bottom: var(--spacing-md);">
+            <div class="container">
+                <h1>Technical Skills</h1>
+                <p style="font-size: 1.2rem; max-width: 600px; color: #555;">
+                    Core competencies and tools I utilize in building, managing, and maintaining robust IT infrastructure.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                
+                <!-- System Administration -->
+                <div class="skill-category">
+                    <h2 style="font-size: 1.8rem;">System Administration & Servers</h2>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Server Deployment</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Provisioning and configuring bare-metal and VMs.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Active Directory</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">User management, Group Policies, domains.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Network Configuration</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">DNS, DHCP, Subnetting, basic firewalls.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux -->
+                <div class="skill-category">
+                    <h2 style="font-size: 1.8rem;">Linux Ecosystem</h2>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Command Line (CLI)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Navigation, file permissions, package managers.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Bash Scripting</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Automating backups and routine admin tasks.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Web Servers</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Configuring Apache, Nginx, and SSL certificates.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microsoft Office -->
+                <div class="skill-category">
+                    <h2 style="font-size: 1.8rem;">Microsoft Office Package</h2>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Excel (Data Analysis)</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Pivot tables, advanced formulas, macros.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Word & PowerPoint</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Formatting documentation, creating IT presentations.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Access</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">Basic database creation and query management.</p>
+                            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <shared-footer></shared-footer>
+
+    <script src="js/components.js"></script>
+</body>
+</html>
